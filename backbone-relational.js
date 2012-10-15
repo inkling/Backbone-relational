@@ -1228,6 +1228,8 @@
 						return model.fetch( opts );
 					}, this );
 				}
+			} else {
+				options && options.success && options.success( this.get(key) );
 			}
 			
 			return requests;
